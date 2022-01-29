@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "Post"
+    "displayName": "Post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +24,7 @@
       "unique": true
     },
     "excerpt": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "content": {
@@ -31,12 +32,12 @@
       "required": true
     },
     "featuredImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "featuredPost": {
       "type": "boolean",
