@@ -1,5 +1,5 @@
 {
-  "name": "strapidb",
+  "name": "strapi",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -10,10 +10,11 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.0.4",
-    "@strapi/plugin-i18n": "4.0.4",
-    "@strapi/plugin-users-permissions": "4.0.4",
-    "@strapi/strapi": "4.0.4",
+    "@strapi/plugin-graphql": "^4.0.6",
+    "@strapi/plugin-i18n": "4.0.6",
+    "@strapi/plugin-users-permissions": "4.0.6",
+    "@strapi/provider-upload-cloudinary": "^4.0.6",
+    "@strapi/strapi": "4.0.6",
     "pg": "8.6.0",
     "pg-connection-string": "^2.5.0"
   },
@@ -21,7 +22,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "52c357b2-00f7-4f5c-9dbf-7f66770af72a"
+    "uuid": "9b051592-f527-4a6c-9427-7b4523a0084d"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
@@ -29,3 +30,4 @@
   },
   "license": "MIT"
 }
+
