@@ -1,10 +1,10 @@
-module.exports = ({env}) => ({
+module.exports = ({ env }) => ({
   graphql: {
     config: {
       endpoint: "/graphql",
       shadowCRUD: true,
       playgroundAlways: false,
-      depthLimit: 7,
+      depthLimit: 10,
       amountLimit: 100,
       apolloServer: {
         tracing: false,
@@ -15,15 +15,15 @@ module.exports = ({env}) => ({
   upload: {
     enabled: true,
     config: {
-      provider: 'cloudinary',
+      provider: "cloudinary",
       providerOptions: {
-        cloud_name: env('CLOUDINARY_NAME'),
-        api_key: env('CLOUDINARY_KEY'),
-        api_secret: env('CLOUDINARY_SECRET'),
+        cloud_name: env("CLOUDINARY_NAME"),
+        api_key: env("CLOUDINARY_KEY"),
+        api_secret: env("CLOUDINARY_SECRET"),
       },
       actionOptions: {
         upload: {
-          folder: 'selfhost'
+          folder: "selfhost",
         },
         delete: {},
       },
