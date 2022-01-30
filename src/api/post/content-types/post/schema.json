@@ -45,9 +45,9 @@
     },
     "author": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::author.author",
-      "inversedBy": "post"
+      "inversedBy": "posts"
     },
     "categories": {
       "type": "relation",

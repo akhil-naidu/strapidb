@@ -27,9 +27,9 @@
     "bio": {
       "type": "text"
     },
-    "post": {
+    "posts": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::post.post",
       "mappedBy": "author"
     }
