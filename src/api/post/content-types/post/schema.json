@@ -49,16 +49,16 @@
       "target": "api::category.category",
       "inversedBy": "posts"
     },
-    "comments": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::comment.comment",
-      "inversedBy": "posts"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "post"
     }
   }
 }
